@@ -1,0 +1,25 @@
+<h1>Record List</h1>
+<p>Here are your jogging records</p>
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+            <th scope="col">Distance(m)</th>
+            <th scope="col">Time(min)</th>
+            <th scope="col">Avg(m/min)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of records"> 
+                <th scope="row">{{index}}</th>
+                <th>{{record.date}}</th>
+                <td>{{record.distance}}</td>
+                <td>{{record.time}}</td>
+                <td>{{record.distance/record.time}}</td>
+            </tr>
+        </tbody>
+        </table>
+        <button mat-raised-button color="primary">Primary</button>
+</div>

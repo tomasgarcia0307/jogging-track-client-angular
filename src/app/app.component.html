@@ -1,0 +1,32 @@
+﻿<!-- nav -->
+<mat-toolbar color="primary" *ngIf="currentUser">
+    <mat-toolbar-row>
+            <span class="nav-item nav-link nav" routerLink="/">Home</span>
+            <span class="nav-item nav-link nav" routerLink="/users">Users</span>
+            <span class="nav-item nav-link nav" routerLink="/records">Records</span>
+            <span class="nav-item nav-link nav" (click)="logout()">Logout</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- credits -->
+<div class="text-center">
+    <p>
+        <a href="http://jasonwatmore.com/post/2018/11/16/angular-7-jwt-authentication-example-tutorial" target="_top">Angular 7 - JWT Authentication Example & Tutorial</a>
+    </p>
+    <p>
+        <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+    </p>
+</div>

@@ -15,6 +15,7 @@ import { LoginComponent } from './login';
 import { SignupComponent } from './signup';
 import { RecordListComponent } from './recordList';
 import { UserListComponent } from './userList';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material';
 @NgModule({
@@ -24,6 +25,7 @@ import { MaterialModule } from './material';
         HttpClientModule,
         routing,
         MaterialModule,
+        BrowserAnimationsModule,
     ],
     declarations: [
         AppComponent,

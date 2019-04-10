@@ -7,6 +7,7 @@ import { UserService, AuthenticationService } from '@/_services';
 @Component({ templateUrl: 'userList.component.html' })
 export class UserListComponent {
     users: User[] = [];
+    displayedColumns: string[] = ['index', 'first_name', 'last_name', 'username', 'email', 'edit', 'remove']
 
     constructor(private userService: UserService) { }
 

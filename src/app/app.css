@@ -1,10 +1,9 @@
-.example-icon {
-    padding: 0 14px;
-  }
+.example-icon{
+  padding: 0 14px;
+  cursor: pointer;
+}
   
-  .example-spacer {
-    flex: 1 1 auto;
-  }
-  .nav {
-    cursor: pointer;
-  }
+.example-spacer {
+  flex: 1 1 auto;
+  cursor: pointer;
+}

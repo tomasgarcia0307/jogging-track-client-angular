@@ -1,10 +1,16 @@
 ﻿<!-- nav -->
 <mat-toolbar color="primary" *ngIf="currentUser">
     <mat-toolbar-row>
-            <span class="nav-item nav-link nav" routerLink="/">Home</span>
-            <span class="nav-item nav-link nav" routerLink="/users">Users</span>
-            <span class="nav-item nav-link nav" routerLink="/records">Records</span>
-            <span class="nav-item nav-link nav" (click)="logout()">Logout</span>
+            <button mat-raised-button color="primary" routerLink="/">Home</button>
+            <button mat-raised-button color="primary" routerLink="/users">Users</button>
+            <button mat-raised-button color="primary" routerLink="/records">Records</button>
+            <span class="example-spacer"></span>
+            <mat-icon class="example-icon" [matMenuTriggerFor]="menu">menu</mat-icon>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Profile</button>
+                <button mat-menu-item>Password</button>
+                <button mat-menu-item (click)="logout()">Logout</button>
+            </mat-menu>
     </mat-toolbar-row>
 </mat-toolbar>
 
@@ -19,14 +25,4 @@
             </div>
         </div>
     </div>
-</div>
-
-<!-- credits -->
-<div class="text-center">
-    <p>
-        <a href="http://jasonwatmore.com/post/2018/11/16/angular-7-jwt-authentication-example-tutorial" target="_top">Angular 7 - JWT Authentication Example & Tutorial</a>
-    </p>
-    <p>
-        <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
-    </p>
 </div>

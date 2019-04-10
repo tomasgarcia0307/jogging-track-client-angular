@@ -7,6 +7,7 @@ import { RecordService, AuthenticationService } from '@/_services';
 @Component({ templateUrl: 'recordList.component.html' })
 export class RecordListComponent {
     records: Record[] = [];
+    displayedColumns: string[] = ['index', 'date', 'distance', 'time', 'avg', 'edit', 'remove']
 
     constructor(private recordService: RecordService) { }
 

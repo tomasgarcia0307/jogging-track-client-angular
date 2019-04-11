@@ -10,4 +10,7 @@ export class UserService {
     getAll() {
         return this.http.get<User[]>(`${config.apiUrl}/api/users/`);
     }
+    getOne(id:number) {
+        return this.http.get<User>(`${config.apiUrl}/api/users/${id}/`);
+    }
 }

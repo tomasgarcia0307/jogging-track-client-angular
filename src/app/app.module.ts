@@ -15,6 +15,7 @@ import { LoginComponent } from './login';
 import { SignupComponent } from './signup';
 import { RecordListComponent } from './recordList';
 import { UserListComponent } from './userList';
+import { UserDetailComponent } from './userDetail';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material';
@@ -33,7 +34,8 @@ import { MaterialModule } from './material';
         LoginComponent,
         SignupComponent,
         RecordListComponent,
-        UserListComponent
+        UserListComponent,
+        UserDetailComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

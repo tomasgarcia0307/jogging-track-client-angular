@@ -5,6 +5,7 @@ import { LoginComponent } from './login';
 import { SignupComponent } from './signup';
 import { RecordListComponent } from './recordList';
 import { UserListComponent } from './userList';
+import { UserDetailComponent } from './userDetail';
 import { AuthGuard } from './_guards';
 
 const appRoutes: Routes = [
@@ -21,6 +22,11 @@ const appRoutes: Routes = [
     {
         path: 'users',
         component: UserListComponent,
+        canActivate: [AuthGuard]
+    },
+    {
+        path: 'users/:id',
+        component: UserDetailComponent,
         canActivate: [AuthGuard]
     },
     {

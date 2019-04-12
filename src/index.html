@@ -11,7 +11,7 @@
     <link href="node_modules/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
 
     <style>
-        a { cursor: pointer }
+        a { cursor: pointer; }
         .example-icon{
             padding: 0 14px;
             cursor: pointer;
@@ -24,8 +24,7 @@
             box-shadow:0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
         }
         .background{
-            padding:30px;
-            background-color: #d1d7f6;
+            background-color: rgb(232, 240, 254);
         }
         .user-table{
             width:80%;
@@ -39,9 +38,22 @@
             margin-left:10%;
             margin-bottom: 1%;
         }
+        .example-card{
+            background-color:#fff;
+            max-width: 400px;
+        }
+        .ml-05{
+            margin-left: 5% !important;
+        }
+        .ml-1{
+            margin-left:10% !important;
+        }
+        .ml-3{
+            margin-left:30% !important;
+        }
     </style>
 </head>
-<body>
+<body class="background">
     <app>Loading...</app>
 </body>
 </html>

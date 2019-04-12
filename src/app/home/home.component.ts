@@ -11,8 +11,6 @@ export class HomeComponent {
     constructor(private userService: UserService) { }
 
     ngOnInit() {
-        this.userService.getAll().pipe(first()).subscribe(users => {
-            this.users = users;
-        });
+        
     }
 }

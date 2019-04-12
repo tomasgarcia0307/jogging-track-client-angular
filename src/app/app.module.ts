@@ -35,7 +35,7 @@ import { MaterialModule } from './material';
         SignupComponent,
         RecordListComponent,
         UserListComponent,
-        UserDetailComponent
+        UserDetailComponent,
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
